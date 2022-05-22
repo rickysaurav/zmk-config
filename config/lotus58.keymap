@@ -49,14 +49,14 @@
         raise_layer {
 // ------------------------------------------------------------------------------------------------------------
 // |BTCLR| BT1  | BT2  |  BT3  |  BT4  |  BT5 |                |OUTTOG|OUTUSB| OUTBT |EP_TOG|EP_ON  |EP_OFF |
-// |     |      |      |       | BOOT  |RESET |                |RESET |BOOT  |       |      |       |       |
-// |     |      |      |       |       |      |      |  |      |      |      |       |      |       |       |
+// |     |      |      |       | BOOT  |RESET |                |RESET |BOOT  | RESET | BOOT |       |       |
+// |     |      |      |       | BOOT  | RESET|      |  |      |      |      |       |      |       |       |
 // |     |      |      |       |       |      |      |  |      |      |      |       |      |       |       |
 //                     |       |       |      |      |  |      |      |      |       |
             bindings = <
 &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                    &out OUT_TOG  &out OUT_USB  &out OUT_BLE  &ext_power EP_TOG  &ext_power EP_ON  &ext_power EP_OFF
-&trans     &trans       &trans       &trans       &bootloader  &reset                          &reset        &bootloader   &trans        &trans             &trans            &trans
-&trans     &trans       &trans       &trans       &trans       &trans       &trans   &trans    &trans        &trans        &trans        &trans             &trans            &trans
+&trans     &trans       &trans       &trans       &bootloader  &reset                          &reset        &bootloader   &reset        &bootloader        &trans            &trans
+&trans     &trans       &trans       &trans       &bootloader  &reset       &trans   &trans    &trans        &trans        &trans        &trans             &trans            &trans
 &trans     &trans       &trans       &trans       &trans       &trans       &trans   &trans    &trans        &trans        &trans        &trans             &trans            &trans
                                      &trans       &trans       &trans       &trans   &trans    &trans        &trans        &trans
             >;
