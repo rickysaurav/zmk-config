@@ -54,10 +54,10 @@
 // 38|  SHFT      |  Z  |  X  |  C      |  V     |  B      |  [ RS   |  |  ] RS  |  N    |  M      |  ,      |  .   |   /   |  SHFT | 51
 // 52                         | v LGUI  | < LALT  | BSLH LW|  SPC    |  | BSPC   |RET LW | > RALT  | ^ RGUI  |                        59
             bindings = <
-&kp GRAVE      &kp N1        &kp N2          &kp N3              &kp N4         &kp N5                                 &kp N6         &kp N7         &kp N8         &kp N9         &kp N0         &kp MINUS
-&kp TAB        &kp Q         &kp W           &kp E               &kp R          &kp T                                  &kp Y          &kp U          &kp I          &kp O          &kp P          &kp EQUAL
+&kp GRAVE      &kp N1        &kp N2          &kp N3              &kp N4         &kp N5                                 &kp N6         &kp N7         &kp N8         &kp N9         &kp N0          &kp MINUS
+&kp TAB        &kp Q         &kp W           &kp E               &kp R          &kp T                                  &kp Y          &kp U          &kp I          &kp O          &kp P           &kp EQUAL
 &mt LCTRL ESC  &lhm LCTRL A  &lhm LALT S     &lhm LSHIFT D       &lhm LGUI F    &kp G        &reset         &reset     &kp H          &rhm RGUI J    &rhm RSHIFT K  &rhm RALT L    &rhm RCTRL SEMI &mt RCTRL SQT
-&kp LSHFT      &kp Z         &kp X           &kp C               &kp V          &kp B        &lt 2 LBKT     &lt 2 RBKT &kp N          &kp M          &kp COMMA      &kp DOT        &kp FSLH       &kp RSHFT
+&kp LSHFT      &kp Z         &kp X           &kp C               &kp V          &kp B        &lt 2 LBKT     &lt 2 RBKT &kp N          &kp M          &kp COMMA      &kp DOT        &kp FSLH        &kp RSHFT
                                              &mt LGUI DOWN       &mt LALT LEFT  &lt 1 BSLH   &kp SPACE      &kp BSPC   &lt 1 RET      &mt RALT RIGHT &mt RGUI UP
             >;
         };
