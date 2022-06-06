@@ -11,6 +11,17 @@
 #include <dt-bindings/zmk/ext_power.h>
 
 / {
+    behaviors {
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+    };
     keymap {
         compatible = "zmk,keymap";
 
@@ -22,18 +33,18 @@
 // 38|  SHFT      |  Z  |  X  |  C      |  V     |  B      |  [ RS   |  |  ] RS  |  N    |  M      |  ,      |  .   |   /   |  SHFT | 51
 // 52                         | v LGUI  | < LALT  | BSLH LW|  SPC    |  | BSPC   |RET LW | > RALT  | ^ RGUI  |                        59
             bindings = <
-&kp GRAVE      &kp N1 &kp N2   &kp N3         &kp N4         &kp N5                                 &kp N6         &kp N7         &kp N8    &kp N9   &kp N0   &kp MINUS
-&kp TAB        &kp Q  &kp W    &kp E          &kp R          &kp T                                  &kp Y          &kp U          &kp I     &kp O    &kp P    &kp EQUAL
-&mt LCTRL ESC  &kp A  &kp S    &kp D          &kp F          &kp G        &reset         &reset     &kp H          &kp J          &kp K     &kp L    &kp SEMI &mt RCTRL SQT
-&kp LSHFT      &kp Z  &kp X    &kp C          &kp V          &kp B        &lt 2 LBKT     &lt 2 RBKT &kp N          &kp M          &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
-                               &mt LGUI DOWN  &mt LALT LEFT  &lt 1 BSLH   &kp SPACE      &kp BSPC   &lt 1 RET      &mt RALT RIGHT &mt RGUI UP
+&kp GRAVE      &kp N1        &kp N2          &kp N3              &kp N4         &kp N5                                 &kp N6         &kp N7         &kp N8         &kp N9         &kp N0         &kp MINUS
+&kp TAB        &kp Q         &kp W           &kp E               &kp R          &kp T                                  &kp Y          &kp U          &kp I          &kp O          &kp P          &kp EQUAL
+&mt LCTRL ESC  &hm LCTRL A   &hm LALT S      &hm LSHIFT D        &hm LGUI F     &kp G        &reset         &reset     &kp H          &hm RGUI J     &hm RSHIFT K   &hm RALT L     &hm RCTRL SEMI &mt RCTRL SQT
+&kp LSHFT      &kp Z         &kp X           &kp C               &kp V          &kp B        &lt 2 LBKT     &lt 2 RBKT &kp N          &kp M          &kp COMMA      &kp DOT        &kp FSLH       &kp RSHFT
+                                             &mt LGUI DOWN       &mt LALT LEFT  &lt 1 BSLH   &kp SPACE      &kp BSPC   &lt 1 RET      &mt RALT RIGHT &mt RGUI UP
             >;
         };
 
         lower_layer {
 // ------------------------------------------------------------------------------------------------------------
 // | F12   |  F1 |  F2 |  F3  |  F4   |  F5     |                   |  F6  |  F7   |  F8   |  F9    |  F10  |  F11   |
-// | ~     |1    |  1  |  3   | 4     |  5      |                   | 6    |  7    |  8    |  9     | 0     |   `   |
+// | ~     |1    |  2  |  3   | 4     |  5      |                   | 6    |  7    |  8    |  9     | 0     |   `   |
 // |       | !   |  @  | #    | $     |  %      |        |  |       |  ^   |  &    |  *    |   (    | )     |       |
 // |       | \   |  +  | -    | {     |  [      |        |  |       | ]    |  }    |  =    |   _    |  "|"  |       |
 //                     |      |       |         |        |  |       |      |       |       |
