@@ -52,7 +52,7 @@
 //   ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 //  0|  GRAVE     |  1      |  2        |  3        |  4         |  5      |                     |  6        |  7         |  8      |  9     |   0      |   -   | 11
 // 12|  TAB       |  Q      |  W        |  E        |  R         |  T      |                     |  Y        |  U         |  I      |  O     |   P      |   +   | 23
-// 24|  ESC CTRL  |  A LCTRL|  S LALT   |  D LSHFT  |  F LGUI    |  G      |  RESET  |  | RESET  |  H        |  J RGUI    |  K RSHFT|  L RALT|   ; RCAPS|' CTRL | 37
+// 24|  ESC CTRL  |  A LCTRL|  S LALT   |  D LSHFT  |  F LGUI    |  G      |  RESET  |  | RESET  |  H        |  J RGUI    |  K RSHFT|  L RALT|   ; RCTRL|' CTRL | 37
 // 38|  SHFT      |  Z      |  X        |  C        |  V         |  B      |  [ RS   |  |  ] RS  |  N        |  M         |  ,      |  .     |   /      |  SHFT | 51
 // 52                                   | v LGUI    | < LALT     | BSLH LW |  SPC    |  | BSPC   |RET LW     | > RALT     | ^ RGUI  |                             59
             bindings = <
