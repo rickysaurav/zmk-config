@@ -49,12 +49,12 @@
         compatible = "zmk,keymap";
 
         default_layer {
-//   ---------------------------------------------------------------------------------------------------------------------------------
-//  0|  GRAVE     |  1  |  2  |  3      |  4     |  5      |                     |  6    |  7      |  8      |  9   |   0   |   -   | 11
-// 12|  TAB       |  Q  |  W  |  E      |  R     |  T      |                     |  Y    |  U      |  I      |  O   |   P   |   +   | 23
-// 24|  ESC CTRL  |  A  |  S  |  D      |  F     |  G      |  RESET  |  | RESET  |  H    |  J      |  K      |  L   |   ;   |' CTRL | 37
-// 38|  SHFT      |  Z  |  X  |  C      |  V     |  B      |  [ RS   |  |  ] RS  |  N    |  M      |  ,      |  .   |   /   |  SHFT | 51
-// 52                         | v LGUI  | < LALT  | BSLH LW|  SPC    |  | BSPC   |RET LW | > RALT  | ^ RGUI  |                        59
+//   ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+//  0|  GRAVE     |  1      |  2        |  3        |  4         |  5      |                     |  6        |  7         |  8      |  9     |   0      |   -   | 11
+// 12|  TAB       |  Q      |  W        |  E        |  R         |  T      |                     |  Y        |  U         |  I      |  O     |   P      |   +   | 23
+// 24|  ESC CTRL  |  A LCTRL|  S LALT   |  D LSHFT  |  F LGUI    |  G      |  RESET  |  | RESET  |  H        |  J RGUI    |  K RSHFT|  L RALT|   ; RCAPS|' CTRL | 37
+// 38|  SHFT      |  Z      |  X        |  C        |  V         |  B      |  [ RS   |  |  ] RS  |  N        |  M         |  ,      |  .     |   /      |  SHFT | 51
+// 52                                   | v LGUI    | < LALT     | BSLH LW |  SPC    |  | BSPC   |RET LW     | > RALT     | ^ RGUI  |                             59
             bindings = <
 &kp GRAVE      &kp N1        &kp N2          &kp N3              &kp N4         &kp N5                                 &kp N6         &kp N7         &kp N8         &kp N9         &kp N0          &kp MINUS
 &kp TAB        &kp Q         &kp W           &kp E               &kp R          &kp T                                  &kp Y          &kp U          &kp I          &kp O          &kp P           &kp EQUAL
